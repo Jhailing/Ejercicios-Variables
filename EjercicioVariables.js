@@ -126,8 +126,9 @@ alert(`El número ${primerNumero} es múltiplo de ${segundoNumero}: ${resultado}
 
 //***********Ejercicio 18*************
 let cantidad = prompt("Ingresá una cantidad de segundos")
-var horas = Math.floor( cantidad / 3600 );  
-var minutos = Math.floor( (cantidad % 3600) / 60 );
+var horas = 
+( cantidad / 3600 );  
+var minutos =( (cantidad % 3600) / 60 );
 var segundos = cantidad % 60;
 alert(`${cantidad} segundos son = ${horas} horas, ${minutos} minutos y ${segundos} segundos`);
 
@@ -162,5 +163,9 @@ let precioTotalMouse = mouse*400
 let precioTotalTeclado= teclado*800
 let precioTotalAuriculares= auriculares*1500
 let total = precioTotalMouse+precioTotalTeclado+precioTotalAuriculares
-let precioPorCuota = total/cuotas
+let precioPorCuota = total/cuotas   Math.floor
 alert(`El detalle de la compra es: mouse ${mouse} x $ 400 =$ ${precioTotalMouse}, teclado ${teclado} x $ 800 =$ ${precioTotalTeclado}, auriculares ${auriculares} x $ 1500 =$ ${precioTotalAuriculares}. El total es $ ${total} en ${cuotas} cuotas de $ ${precioPorCuota}`)
+
+
+
+
